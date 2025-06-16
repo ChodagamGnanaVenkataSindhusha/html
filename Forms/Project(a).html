@@ -1,0 +1,208 @@
+<html>
+<head>
+  <title>PROJECT</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0ffff;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background-color:#eafaf1" align="center"><b>🏠SMART HOME</b></h1>
+
+  <form action="smarthome.html">
+    <fieldset>
+      <div class="d-flex justify-content-around mb-3">
+        <button type="button" onclick="showRoom('kitchen')"><b>KITCHEN</b></button>
+        <button type="button" onclick="showRoom('living')"><b>LIVING ROOM</b></button>
+        <button type="button" onclick="showRoom('bedroom')"><b>BED ROOM</b></button>
+        <button type="button" onclick="showRoom('washroom')"><b>WASH ROOM</b></button>
+      </div>
+    </fieldset>
+  </form>
+  <div id="kitchen-data">
+    <fieldset>
+      <h3>150Kwh</h3>
+      <h3>Power Usage For Today</h3>
+      &nbsp;
+    </fieldset>
+    &nbsp;
+    <fieldset>
+      <h2>ACCESSORIES</h2>
+      <div class="d-flex flex-wrap">
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">MAIN LIGHTS 💡</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">FAN🌀</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    &nbsp;
+    <fieldset><h4>HUMIDITY</h4>70%</fieldset>
+    &nbsp;
+    <fieldset><h4>INTERNET</h4>10 mbps</fieldset>
+    &nbsp;
+    <fieldset><h3>Current Temperature</h3>22°C</fieldset>
+  </div>
+  <div id="living-data" style="display: none;">
+    <fieldset>
+      <h3>213Kwh</h3>
+      <h3>Power Usage For Today</h3>
+    </fieldset>
+    &nbsp;
+    <fieldset>
+      <h2>ACCESSORIES</h2>
+      <div class="d-flex flex-wrap">
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">TELEVISION 📺</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">LIGHT💡</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">WASHING MACHINE🧺</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    &nbsp;
+    <fieldset><h4>HUMIDITY</h4>85%</fieldset>
+    &nbsp;
+    <fieldset><h4>INTERNET</h4>20 mbps</fieldset>
+    &nbsp;
+    <fieldset><h3>Current Temperature</h3>18.5°C</fieldset>
+  </div>
+  <div id="bedroom-data" style="display: none;">
+    <fieldset>
+      <h3>90Kwh</h3>
+      <h3>Power Usage For Today</h3>
+    </fieldset>
+    &nbsp;
+    <fieldset>
+      <h2>ACCESSORIES</h2>
+      <div class="d-flex flex-wrap">
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">MAIN LIGHT 💡</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">AC ❄️</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">FAN🌀</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    &nbsp;
+    <fieldset><h4>HUMIDITY</h4>72%</fieldset>
+    &nbsp;
+    <fieldset><h4>INTERNET</h4>15 mbps</fieldset>
+    &nbsp;
+    <fieldset><h3>Current Temperature</h3>24°C</fieldset>
+  </div>
+  <div id="washroom-data" style="display: none;">
+    <fieldset>
+      <h3>110Kwh</h3>
+      <h3>Power Usage For Today</h3>
+    </fieldset>
+    &nbsp;
+    <fieldset>
+      <h2>ACCESSORIES</h2>
+      <div class="d-flex flex-wrap">
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">MAIN LIGHT 💡</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">GEYSER♨️</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+        <div class="card ms-4" style="width: 18rem;">
+          <img src="p3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">SHOWER🚿</h4>
+            <p class="card-text">STATUS</p>
+            <button class="btn btn-success">ON</button>
+            <button class="btn btn-danger">OFF</button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    &nbsp;
+    <fieldset><h4>HUMIDITY</h4>60%</fieldset>
+    &nbsp;
+    <fieldset><h4>INTERNET</h4>5 mbps</fieldset>
+    &nbsp;
+    <fieldset><h3>Current Temperature</h3>26°C</fieldset>
+  </div>
+
+  <script>
+    function showRoom(room) {
+      document.getElementById("kitchen-data").style.display = "none";
+document.getElementById("living-data").style.display = "none";
+document.getElementById("bedroom-data").style.display = "none";
+document.getElementById("washroom-data").style.display = "none";
+document.getElementById(room+"-data").style.display = "block";
+    }
+  </script>
+</body>
+</html>
+
